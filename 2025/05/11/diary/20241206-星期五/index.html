@@ -1709,7 +1709,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1747011139429),
+    lastupdate: new Date(1747011422642),
     sidebar: {
       for_page: ["blogger","music","category","tagcloud","webinfo"],
       for_post: ["toc"],
@@ -2650,8 +2650,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         </a>
       
       
-        <a class='next' href='/2025/05/11/diary/20241210-%E6%98%9F%E6%9C%9F%E4%BA%8C/'>
-          <p class='title'>2024年12月10日 星期二<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='next' href='/2025/05/11/diary/20241212-%E6%98%9F%E6%9C%9F%E5%9B%9B/'>
+          <p class='title'>2024年12月12日 星期四<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'></p>
         </a>
       
@@ -2974,9 +2974,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function check_giscus() {
     if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
+      volantis.giscus.Theme = '';
     } else {
-      volantis.giscus.Theme = 'light';
+      volantis.giscus.Theme = '';
     }
 
     return document.getElementById("giscus_container");
@@ -2985,7 +2985,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":"preferred_color_scheme","repo":"Gonghysin/my_boke","repo-id":"R_kgDOOoES-g","category":"Announcements","category-id":"DIC_kwDOOoES-s4CqCRA","mapping":"pathname","strict":"0","reactions-enabled":"1","emit-metadata":"0","input-position":"bottom","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
